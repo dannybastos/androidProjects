@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context="com.cursoandroid.dannybastos.idadedecachorro.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="39dp"
+            android:background="@drawable/cachorro"
+            android:contentDescription="@string/descImageDog"
+            />
+
+        <TextView
+            android:id="@+id/txtTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView"
+            android:layout_marginTop="52dp"
+            android:background="#4FC4D6"
+            android:textColor="@android:color/background_light"
+            android:padding="10dp"
+            tools:text="@string/txtTexto" />
+
+        <EditText
+            android:id="@+id/txtInputAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTexto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:background="@android:color/background_light"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnGetAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtInputAge"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="43dp"
+            android:text="@string/btnGetAge" />
+
+        <TextView
+            android:id="@+id/txtHumanAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGetAge"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="@string/txthumanage" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
